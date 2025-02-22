@@ -10,13 +10,14 @@ public class Student_Grade_Calculator {
 		int n = sc.nextInt();
 		System.out.println("Enter the marks of the subject one by one.");
 		double sum = 0 ;
+		// Input marks
 		for (int i = 1; i <= n; i++) {
 			sum+= sc.nextDouble();
 		}
 		int m = (int)sum/n;
-
+		//grade calculator
 		switch (m/10){
-			case 10:
+			case 10:// scoring 100-90 gives you same grade i.e O 
 			case 9:
 				System.out.println("Grade is O");
 				break;
